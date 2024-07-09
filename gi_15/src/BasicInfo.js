@@ -6,7 +6,7 @@ class BasicInfo extends React.Component {
     const { Name, Phone, Email, DateOfBirth, Occupation } = this.props.person;
 
     return (
-        <div>
+        <div class="basic-info">
           <h1>Name: {Name}</h1>
           <p>Phone: {Phone}</p>
           <p>Email: {Email}</p>
