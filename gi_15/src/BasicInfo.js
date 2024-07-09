@@ -1,4 +1,5 @@
 import React from 'react';
+import './BasicInfo.css';
 
 class BasicInfo extends React.Component {
   render() {
