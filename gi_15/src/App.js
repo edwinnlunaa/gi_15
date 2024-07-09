@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
+import BasicInfo from './BasicInfo';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      person: {}
+      person: {
+        Name: 'Edwin Luna',
+        Phone : '704-999-2330',
+        Email: 'edwinlunadlg@gmail.com',
+        DateOfBirth: '09-30-1999',
+        Occupation: 'Coding Apprentice'
+      }
     };
   }
-  
+
   render() {
     return (
       <div>
-        <h1>Name: Edwin Luna</h1>
-        <p>Phone : 704-999-2330</p>
-        <p>Email: edwinlunadlg@gmail.com</p>
-        <p>Date of Birth: 09-30-1999</p>
-        <p>Occupation: Coding Apprentice</p>
+        <BasicInfo person={this.state.person} />
       </div>
     );
   }
